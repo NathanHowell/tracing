@@ -17,3 +17,7 @@ members = [
     "tracing-journald",
     "examples"
 ]
+
+[patch.crates-io]
+opentelemetry = { git = "https://github.com/NathanHowell/opentelemetry-rust", rev = "53cd4a489c593cc485eb4280c8393fee0bf32465" }
+opentelemetry-jaeger = { git = "https://github.com/NathanHowell/opentelemetry-rust", rev = "53cd4a489c593cc485eb4280c8393fee0bf32465" }

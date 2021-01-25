@@ -1,6 +1,6 @@
 use futures::future;
 use http::{Request, Response};
-use hyper::{Body, Server};
+use hyper::Body;
 use std::task::{Context, Poll};
 use std::time::Duration;
 use tower::{Service, ServiceBuilder};

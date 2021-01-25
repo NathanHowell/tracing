@@ -633,7 +633,7 @@ mod tests {
                 .drop_span(span::mock().named("a"))
                 .done()
                 .run_with_handle();
-            let mut runtime = tokio::runtime::Runtime::new().unwrap();
+            let mut runtime = tokio::runtime::Builder::new_current_thread().build().unwrap();
             with_default(collector, || {
                 tracing::trace_span!("a").in_scope(|| {
                     let future = PollN::new_ok(2)
